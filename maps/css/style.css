@@ -1,0 +1,25 @@
+
+#btn_buscar {
+    position: relative;
+    top: -85px;
+    left: 573px;
+}
+
+body{
+  background-color: black;
+}
+
+nav .material-icons { color: red; }
+
+.jumbotron {
+    background-image: url('../images/casero.png');
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.carousel-item .jumbotron {
+  background-image: url('../images/madera.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+
+}
