@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js"  ng-app="AcomerYapp">
+<head lang ="es">
+    <meta charset="utf-8">
+    <title>¡AcomerYapp!</title>
+    <meta name="description" content="¡AcomerYapp!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../users/usuarios/registro.js"></script>
+</head>
+<body ng-controller="addCtrl">
+  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">¡AcomerYapp!</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdow" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Login
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">¿Quienes Somos?</a>
+        </li>
+      </ul>
+        <a class="nav-link disabled text-white bg-dark"  href="home.html"><i class="material-icons">room</i> Restaurantes Cercanos</a>
+    </div>
+  </nav>
+  <div class="dropdown-menu">
+    <form class="px-4 py-3">
+      <a class="btn btn-light btn-lg btn-block" href="#" role"button"> Iniciar Sesion en ¡AcomerYapp!</a>
+      <div class="dropdown-divider"></div>
+      <div class="form-group">
+        <label for="correo">E-mail</label>
+        <input type="email" class="form-control" id="correo" placeholder="email@ejemplo.com">
+      </div>
+      <div class="form-group">
+        <label for="password">contraseña</label>
+        <input type="password" class="form-control" id="contraseña" placeholder="Contraseña">
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+        <label class="form-check-label" for="dropdownCheck">
+          Recordarme
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary" onclick="buscar_usuario()"> Ingresar</a></button>
+    </form>
+    <div class="dropdown-divider"></div>
+    <a class="btn btn-dark btn-lg btn-block" href="#" role"button"> Ingresar con facebook</a>
+    <div class="dropdown-divider"></div>
+      <a class="btn btn-danger btn-lg btn-block" href="#" role"button"> Crear Cuenta</a>
+  </div>
+
+</body>
+<script src="login.js"></script>
+<script src="validar.js"></script>
+</html>

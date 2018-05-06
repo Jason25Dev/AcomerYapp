@@ -1,0 +1,67 @@
+
+#btn_buscar {
+    position: relative;
+    top: -85px;
+    left: 573px;
+}
+
+#map{
+  height: 300px;
+      width:100%;
+}
+
+body{
+  background-color: black;
+}
+
+nav .material-icons { color: red; }
+
+.container{
+  height: 150%;
+}
+
+.jumbotron {
+    background-image: url('../images/casero.png');
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.carousel-item .jumbotron {
+  background-color: black;
+
+}
+.container .jumbotron {
+  background-image: url('../images/3.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.informacion .jumbotron {
+  background-image: url('../images/informacion.png');
+  background-repeat: no-repeat;
+  width: 37%;
+  height: 150%;
+  left: 45%;
+}
+.informacion{
+  position: relative;
+left: 140px;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 10%;
+    left: 438px;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 33rem;
+    padding: 0.5rem 6px;
+    margin: 1.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
