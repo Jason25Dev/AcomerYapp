@@ -1,18 +1,16 @@
 <!doctype html>
 <html class="no-js"  ng-app="AcomerYapp">
 <head lang ="es">
-    <meta charset="utf-8">
-    <title>¡AcomerYapp!</title>
-    <meta name="description" content="An example demonstrating Google Map integration with MEAN Apps">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="busqueda.css">
+		<meta charset="utf-8">
+		<title>¡AcomerYapp!</title>
+		<meta name="description" content="An example demonstrating Google Map integration with MEAN Apps">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="busqueda.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-    <script src="../js/jquery-3.2.1.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
@@ -55,7 +53,92 @@
     <img class="card-img-top" src="../images/apolo.jpg" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Restaurante Teriyaky </h5>
-      <a class="btn btn-info" href="#" role="button"> Ver Menu <i class="material-icons">restaurant_menu</i></a>
+      <a class="btn btn-info" href="#" role="button"  data-toggle="modal" data-target="#exampleModal"> Ver Menu <i class="material-icons">restaurant_menu</i></a>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"> Teriyaky - Menu Del Dia </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+      				<div class="accordion" id="accordion">
+         <div class="card">
+           <div class="card-header" id="headingOne">
+             <h5 class="mb-0">
+               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
+                 Sopas
+               </button>
+             </h5>
+           </div>
+           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+             <div class="card-body">
+               <img class="card-img-top" src="../images/sopa.jpg" alt="Card image cap">
+             </br>
+           </br>
+      				 <div class="row">
+      				  <div class="col-sm-8"><h4 class="alert-heading">Crema de Maíz</h4></div>
+      				  <div class="col-sm-4"><button type="submit" class="btn btn-success" onclick="buscar_usuario()"><a> Agregar</a></button></div>
+      				</div>
+      			</br>
+      				<div class="row">
+      				 <div class="col-sm-8"><h4 class="alert-heading">Crema de Champiñones</h4></div>
+      				 <div class="col-sm-4"><button type="submit" class="btn btn-success" onclick="buscar_usuario()"><a> Agregar</a></button></div>
+      			 </div>
+             </div>
+           </div>
+         </div>
+         <div class="card">
+           <div class="card-header" id="headingTwo">
+             <h5 class="mb-0">
+               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                 Ensaladas
+               </button>
+             </h5>
+           </div>
+           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+               <div class="card-body">
+                 <img class="card-img-top" src="../images/ensalada.jpg" alt="Card image cap">
+               </br>
+             </br>
+        				 <div class="row">
+        				  <div class="col-sm-8"><h4 class="alert-heading">Ensalada Mediterranea</h4></div>
+        				  <div class="col-sm-4"><button type="submit" class="btn btn-success" onclick="buscar_usuario()"><a> Agregar</a></button></div>
+        				</div>
+        			</br>
+        				<div class="row">
+        				 <div class="col-sm-8"><h4 class="alert-heading">Ensalada Rusa</h4></div>
+        				 <div class="col-sm-4"><button type="submit" class="btn btn-success" onclick="buscar_usuario()"><a> Agregar</a></button></div>
+        			 </div>
+             </div>
+           </div>
+         </div>
+         <div class="card">
+           <div class="card-header" id="headingThree">
+             <h5 class="mb-0">
+               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                 Bebidas
+               </button>
+             </h5>
+           </div>
+           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+             <div class="card-body">
+             </div>
+           </div>
+         </div>
+       </div>
+            </div>
+            <div class="modal-footer">
+      				<h4 class="alert-footer">!AcomerYapp!</h4>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <a class="btn btn-dark" href="#" role="button"> Domicilio <i class="material-icons">local_shipping</i></a>
       <a class="btn btn-warning" href="#" role="button"> Favoritos <i class="material-icons">favorite</i></a>
     </div>
@@ -88,5 +171,8 @@
  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD4TWmxa8aQOSzwdhQMt2vEGaKBnvOKhA&callback=initMap">
  </script>
 </body>
-    <script src="../js/botones.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
 </html>

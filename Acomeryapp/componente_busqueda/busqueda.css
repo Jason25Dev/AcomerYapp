@@ -26,11 +26,58 @@ img {
     border: 5px solid rgba(0,0,0,.125);
     border-radius: 0.25rem;
 }
-.card-deck {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    margin-right: 3px;
-    margin-left: 7px;
+
+.modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+    background-color: #1a1d20;
+}
+.modal-header {
+  background-color: maroon;
+  }
+  .h5, h5 {
+      font-size: 1.25rem;
+      font-family: initial;
+      color: white;
+  }
+  .card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    min-width: 0px;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 5px solid rgba(0,0,0,.125);
+    border-radius: 1.25rem;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 27px;
+    margin-left: 0px;
+}
+
+.h4, h4 {
+    font-size: 13px;
+    margin-bottom: -0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - -1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    /* left: 37px; */
+}
+  .card-header:first-child {
+   background-color: white;
 }
