@@ -15,7 +15,7 @@
 </head>
 <body ng-controller="addCtrl">
   <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">¡AcomerYapp!</a>
+    <a class="navbar-brand" href="../index.html">¡AcomerYapp!</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -23,11 +23,11 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link">Inicio <span class="sr-only">(current)</span></a>
+          <a class="nav-link active" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
         </li>
 
         <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdow" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="../componente_registro/login.html" id="navbarDropdow" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Login
           </a>
         </li>
@@ -35,12 +35,12 @@
           <a class="nav-link disabled" href="#">¿Quienes Somos?</a>
         </li>
       </ul>
-        <a class="nav-link disabled text-white bg-dark"  href="home.html"><i class="material-icons">room</i> Restaurantes Cercanos</a>
+        <a class="nav-link active text-white bg-dark"  href="../componente_busqueda/buscar_cercanos.html"><i class="material-icons">room</i> Restaurantes Cercanos</a>
     </div>
   </nav>
   <div class="dropdown-menu">
 
-      <a class="btn btn-light btn-lg btn-block" href="#" role"button"> Iniciar Sesion en ¡AcomerYapp!</a>
+      <a class="btn btn-light btn-lg btn-block" href="../componente_registro/login.html" role="button"> Iniciar Sesion en ¡AcomerYapp!</a>
       <div class="dropdown-divider"></div>
       <div class="form-group">
         <label for="correo">E-mail</label>
@@ -56,13 +56,12 @@
           Recordarme
         </label>
       </div>
-      <button type="submit" class="btn btn-primary" onclick="buscar_usuario()"> Ingresar</a></button>
+      <button type="submit" class="btn btn-primary" onclick="buscar_usuario()"><a> Ingresar</a></button>
     <div class="dropdown-divider"></div>
     <a class="btn btn-dark btn-lg btn-block" href="#" role="button"> Ingresar con facebook</a>
     <div class="dropdown-divider"></div>
       <a class="btn btn-danger btn-lg btn-block" href="../componente_crear_cuenta/crear_cuenta.html" role="button"> Crear Cuenta</a>
   </div>
-
 </body>
 <script src="login.js"></script>
 <script src="validar.js"></script>

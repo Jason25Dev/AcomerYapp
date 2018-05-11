@@ -9,7 +9,18 @@
   height: 300px;
       width:100%;
 }
-
+#map_sando{
+  height: 300px;
+      width:100%;
+}
+#map_apolo{
+  height: 300px;
+      width:100%;
+}
+#map_normandia{
+  height: 300px;
+      width:100%;
+}
 body{
   background-color: black;
 }

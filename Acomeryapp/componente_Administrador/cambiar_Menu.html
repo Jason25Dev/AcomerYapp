@@ -1,0 +1,972 @@
+<!doctype html>
+<html class="no-js"  ng-app="AcomerYapp">
+<head lang ="es">
+    <meta charset="utf-8">
+    <title>¡AcomerYapp!</title>
+    <meta name="description" content="¡AcomerYapp!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="Admin.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="/lib/bootstrap.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- CSS -->
+</head>
+<body ng-controller="addCtrl">
+  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="index_Administrador.html">¡AcomerYapp!</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+<div class="dropdown show">
+  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" id="cuenta" >
+  Configuración</a>
+  <div class="dropdown-menu">
+    <a href="cambiar_Calificaciones.html" class="dropdown-item">Ver Calificaciones</a>
+      <a href="cambiar_Menu.html" class="dropdown-item">Cambiar Menú</a>
+  </div>
+</div>
+<button type="button" class="btn btn-dark"><i class="material-icons" id="alerta">add_alert</i>
+         <span class="badge badge-light">3</span>
+        </button>
+        <a class="nav-link active text-white bg-dark"  href="#"><i class="material-icons" id="cuenta">account_circle</i> Teriyaki </a>
+    </div>
+  </nav>
+
+ <div class="container">
+  <div class="text-center">
+
+     <img class="img-fluid img-centered" src="../images/Logo_Restaurante.png" alt="">
+  </div>
+  <div class="container">
+    <div class="text-xl-center">
+<a class="btn btn-info" href="#" role="button"  data-toggle="modal" data-target="#Principios"> Principios <i class="material-icons">restaurant_menu</i></a>
+      <!-- Modal -->
+
+      <a class="btn btn-dark" href="#" role="button" data-toggle="modal" data-target="#Sopas"> Sopas <i class="material-icons">restaurant_menu</i></a>
+      <a class="btn btn-warning" href="#" role="button" data-toggle="modal" data-target="#Jugos"> Jugos <i class="material-icons">restaurant_menu</i></a>
+      <a class="btn btn-success" href="#" role="button" data-toggle="modal" data-target="#Especial"> Especial <i class="material-icons">restaurant_menu</i></a>
+      <a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#Extras"> Extras <i class="material-icons">restaurant_menu</i></a>
+      <a class="btn btn-warning" href="#" role="button" data-toggle="modal" data-target="#Bebidas"> Bebidas <i class="material-icons">restaurant_menu</i></a>
+    </div>
+    </div>
+    </div>
+    <div class="container">
+      <div class="text-xl-center">
+        <br></br>
+        <br></br>
+<img src="../images/menu.png" id ="ImagenMenu" class="img-fluid" alt="Responsive image">
+</div>
+    </div>
+
+  </div>
+<br></<br>
+<br></<br>
+<!-- Principios -->
+<div class="modal fade" id="Principios" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Principio</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Principios</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Frijoles</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Spaguetti</td>
+    </tr>
+     <tr>
+      <th scope="row">3</th>
+      <td>Torta de ahuyama</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#EditarPrincipios" data-dismiss="modal">Editar</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#CrearPrincipios" data-dismiss="modal">Crear</button>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#EliminarPrincipios" data-dismiss="modal">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Sopas -->
+<div class="modal fade" id="Sopas" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Sopas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Sopas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Ajiaco</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Sancocho</td>
+    </tr>
+
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#EditarSopas" data-dismiss="modal">Editar</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#CrearSopas" data-dismiss="modal">Crear</button>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#EliminarSopas" data-dismiss="modal">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Sopas -->
+<!-- Jugos -->
+<div class="modal fade" id="Jugos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Jugos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Jugos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Fresa</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Limonada</td>
+    </tr>
+     <tr>
+      <th scope="row">3</th>
+      <td>Lulo</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#EditarJugos" data-dismiss="modal">Editar</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#CrearJugos" data-dismiss="modal">Crear</button>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#EliminarJugos" data-dismiss="modal">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Jugos -->
+<!-- Especial -->
+<div class="modal fade" id="Especial" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Especial</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Especial</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Carne a la llanera</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Arroz con pollo</td>
+    </tr>
+     <tr>
+      <th scope="row">3</th>
+      <td>Pescado a la brasa</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#EditarEspecial" data-dismiss="modal">Editar</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#CrearEspecial" data-dismiss="modal">Crear</button>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#EliminarEspecial" data-dismiss="modal">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Especial -->
+<!-- Extras -->
+<div class="modal fade" id="Extras" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Extras</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Extras</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Papa a la francesa</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Porción de carne</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#EditarExtras" data-dismiss="modal">Editar</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#CrearExtras" data-dismiss="modal">Crear</button>
+         <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#EliminarExtras" data-dismiss="modal">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Extras -->
+<!-- Bebidas -->
+<div class="modal fade" id="Bebidas" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Bebidas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Bebidas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Gaseosa personal</td>
+    </tr>
+    <tr>
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#EditarBebidas" data-dismiss="modal">Editar</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#CrearBebidas" data-dismiss="modal">Crear</button>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#EliminarBebidas" data-dismiss="modal">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Bebidas -->
+<!-- Editar Principios-->
+<div class="modal fade" id="EditarPrincipios" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Principios</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Principios</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Frijoles</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Spaguetti</td>
+    </tr>
+     <tr>
+      <th scope="row">3</th>
+      <td>Torta de ahuyama</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-toggle="popover" title="Actualizado" data-content="Se ha actualizado correctamente" >Actualizar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Editar Principios-->
+<!-- Eliminar Principios-->
+<div class="modal fade" id="EliminarPrincipios" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Principios</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Principios</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Frijoles</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Spaguetti</td>
+    </tr>
+     <tr>
+      <th scope="row">3</th>
+      <td>Torta de ahuyama</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-danger" data-toggle="popover" title="Actualizado" data-content="Se ha Eliminado correctamente" >Eliminar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Eliminar Principios-->
+<!-- Crear Principios -->
+<div class="modal fade" id="CrearPrincipios" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Principios</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="form-control" placeholder="Nuevo principio">
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-toggle="popover" title="Actualizado" data-content="Se ha agregado correctamente" >Agregar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Crear Principios -->
+<!-- Editar Sopas-->
+<div class="modal fade" id="EditarSopas" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Sopas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Sopas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Ajiaco</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Sancocho</td>
+    </tr>
+
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-toggle="popover" title="Actualizado" data-content="Se ha actualizado correctamente" >Actualizar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Editar Sopas-->
+<!-- Eliminar Sopas-->
+<div class="modal fade" id="EliminarSopas" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Sopas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Sopas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Ajiaco</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Sancocho</td>
+    </tr>
+
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-danger" data-toggle="popover" title="Actualizado" data-content="Se ha Eliminado correctamente" >Eliminar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Eliminar Sopas-->
+<!-- Crear Sopas -->
+<div class="modal fade" id="CrearSopas" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Sopas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="form-control" placeholder="Nueva sopa">
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-toggle="popover" title="Actualizado" data-content="Se ha agregado correctamente" >Agregar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Crear Sopas -->
+<!-- Editar Jugos-->
+<div class="modal fade" id="EditarJugos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Jugos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+            <table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Jugos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Fresa</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Limonada</td>
+    </tr>
+     <tr>
+      <th scope="row">3</th>
+      <td>Lulo</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-toggle="popover" title="Actualizado" data-content="Se ha actualizado correctamente" >Actualizar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Editar Jugos-->
+<!-- Eliminar Jugos-->
+<div class="modal fade" id="EliminarJugos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Jugos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+           <table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Jugos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Fresa</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Limonada</td>
+    </tr>
+     <tr>
+      <th scope="row">3</th>
+      <td>Lulo</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-danger" data-toggle="popover" title="Actualizado" data-content="Se ha Eliminado correctamente" >Eliminar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Eliminar Jugos-->
+<!-- Crear Jugos -->
+<div class="modal fade" id="CrearJugos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Jugos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="form-control" placeholder="Nuevo jugo">
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-toggle="popover" title="Actualizado" data-content="Se ha agregado correctamente" >Agregar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Crear Jugos -->
+<!-- Editar Especial-->
+<div class="modal fade" id="EditarEspecial" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Especial</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+            <table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Especial</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Carne a la llanera</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Arroz con pollo</td>
+    </tr>
+     <tr>
+      <th scope="row">3</th>
+      <td>Pescado a la brasa</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-toggle="popover" title="Actualizado" data-content="Se ha actualizado correctamente" >Actualizar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Editar Especial-->
+<!-- Eliminar Especial-->
+<div class="modal fade" id="EliminarEspecial" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Especial</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+           <table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Especial</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Carne a la llanera</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Arroz con pollo</td>
+    </tr>
+     <tr>
+      <th scope="row">3</th>
+      <td>Pescado a la brasa</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-danger" data-toggle="popover" title="Actualizado" data-content="Se ha Eliminado correctamente" >Eliminar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Eliminar Especial-->
+<!-- Crear Especial -->
+<div class="modal fade" id="CrearEspecial" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Especial</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="form-control" placeholder="Nuevo Especial">
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-toggle="popover" title="Actualizado" data-content="Se ha agregado correctamente" >Agregar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Crear Especial -->
+<!-- Editar Extras-->
+<div class="modal fade" id="EditarExtras" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Extras</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+  <table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Extras</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Papa a la francesa</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Porción de carne</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-toggle="popover" title="Actualizado" data-content="Se ha actualizado correctamente" >Actualizar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Editar Extras-->
+<!-- Eliminar Extras-->
+<div class="modal fade" id="EliminarExtras" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Extras</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Extras</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Papa a la francesa</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Porción de carne</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-danger" data-toggle="popover" title="Actualizado" data-content="Se ha Eliminado correctamente" >Eliminar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Eliminar Especial-->
+<!-- Crear Especial -->
+<div class="modal fade" id="CrearExtras" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Extras</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="form-control" placeholder="Nuevos Extras">
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-toggle="popover" title="Actualizado" data-content="Se ha agregado correctamente" >Agregar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Crear Extras -->
+<!-- Editar Bebidas-->
+<div class="modal fade" id="EditarBebidas" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Bebidas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+ <table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Bebidas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Gaseosa personal</td>
+    </tr>
+    <tr>
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-toggle="popover" title="Actualizado" data-content="Se ha actualizado correctamente" >Actualizar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Editar Bebidas-->
+<!-- Eliminar Bebidas-->
+<div class="modal fade" id="EliminarBebidas" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Bebidas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Bebidas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Gaseosa personal</td>
+    </tr>
+    <tr>
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-toggle="popover" title="Actualizado" data-content="Se ha Eliminado correctamente" >Eliminar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Eliminar Bebidas-->
+<!-- Crear Bebidas -->
+<div class="modal fade" id="CrearBebidas" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Bebidas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="form-control" placeholder="Nuevas Bebidas">
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-toggle="popover" title="Actualizado" data-content="Se ha agregado correctamente" >Agregar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Crear Bebidas -->
+<!-- Referencias CSS -->
+   <script src="..\js\bootstrap.bundle.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+   <!-- Referencias CSS -->
+   <!-- JS -->
+   <script src="menu.js"></script>
+   <!-- JS -->
+</body>
+
+</html>

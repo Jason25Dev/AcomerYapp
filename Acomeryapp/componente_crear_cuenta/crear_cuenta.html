@@ -51,7 +51,6 @@
   </div>
   <div class="card-body" id="form_usuario">
     <h5 class="card-title">Registro ¡AcomerYapp!</h5>
-    <form class="px-4 py-3" >
       <div class="dropdown-divider"></div>
       <div class="form-group">
         <label for="nombre">Nombre Usuario</label>
@@ -63,14 +62,12 @@
         <label for="password">contraseña</label>
         <input type="password" class="form-control" id="contraseña" placeholder="Contraseña">
       </div>
-      <button type="submit" class="btn btn-success" onclick="buscar_usuario()"><a> Registrarse</a></button>
+      <button type="submit" class="btn btn-success"  onclick="user()"><a> Registrarse</a></button>
+    </div>
       <a class="btn btn-light btn-lg btn-block" href="../componente_registro/login.html" role="button"> Iniciar Sesion en ¡AcomerYapp!</a>
-    </form>
-  </div>
   <div class="card-body" id="form_restaurante">
+    <div class="dropdown-divider"></div>
     <h5 class="card-title">Registro ¡AcomerYapp!</h5>
-    <form class="px-4 py-3">
-      <div class="dropdown-divider"></div>
       <div class="form-group">
         <label for="nombre">Nombre restaurante</label>
         <input type="nombre" class="form-control" id="nombre" placeholder="ingrese un nombre de usuario">
@@ -85,10 +82,10 @@
         <label for="direccion">Direccion</label>
         <input type="text" class="form-control" id="direccion" placeholder="Direccion Restaurante">
       </div>
-      <button type="submit" class="btn btn-success" onclick="buscar_usuario()"><a> Registrarse</a></button>
+      <button type="submit" class="btn btn-success"  onclick="admin()"><a> Registrarse</a></button>
       <a class="btn btn-light btn-lg btn-block" href="../componente_registro/login.html" role="button"> Iniciar Sesion en ¡AcomerYapp!</a>
-    </form>
   </div>
 </body>
+<script src="iniciar_sesion.js"></script>
 <script src="crear_cuenta.js"></script>
 </html>

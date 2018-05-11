@@ -14,7 +14,7 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">¡AcomerYapp!</a>
+    <a class="navbar-brand" href="../index.html">¡AcomerYapp!</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,25 +27,17 @@
         <li class="nav-item">
           <a class="nav-link active" href="../componente_crear_cuenta/crear_cuenta.html">Registrate</a>
         </li>
-        <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="../componente_registro/login.html" id="navbarDropdow" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Login
-          </a>
-        </li>
+				<li class="nav-item">
+					<a class="nav-link active" href="../componente_registro/login.html">Login</a>
+				</li>
         <li class="nav-item">
           <a class="nav-link disabled" href="#">¿Quienes Somos?</a>
         </li>
       </ul>
-        <a class="nav-link disabled text-white bg-dark"  href="#"><i class="material-icons">room</i> Restaurantes Cercano</a>
+        <a class="nav-link disabled text-white bg-dark"  href="../componente_busqueda/buscar_cercanos.html"><i class="material-icons">room</i> Restaurantes Cercano</a>
     </div>
   </nav>
 </br>
-  <div class="btn-group" role="group" aria-label="Basic example">
-    <h2 class="text-white">Filtrar  </h2>
-  <button type="button" class="btn btn-secondary" id="domicilios">Domicilios</button>
-  <button type="button" class="btn btn-success">Reserva</button>
-  <button type="button" class="btn btn-primary">Calificacion</button>
-</div>
   <div id="map"></div>
     <h1 class="display-4 text-white">¡Selecciona tu mejor opción!</h1>
   <div class="card-deck">
@@ -134,7 +126,6 @@
             <div class="modal-footer">
       				<h4 class="alert-footer">!AcomerYapp!</h4>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
             </div>
           </div>
         </div>
@@ -147,9 +138,12 @@
     </div>
   </div>
   <div class="card">
-    <img class="card-img-top" src="../images/restaurante1.jpg" alt="Card image cap">
+		<img class="card-img-top" src="../images/restaurante1.jpg" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">Restaurante Modelia</h5>
+      <h5 class="card-title">Restaurante Sandó</h5>
+			<a class="btn btn-info" href="#" role="button"  data-toggle="modal" data-target="#exampleModal"> Ver Menu <i class="material-icons">restaurant_menu</i></a>
+			<a class="btn btn-dark" href="#" role="button"> Domicilio <i class="material-icons">local_shipping</i></a>
+      <a class="btn btn-warning" href="#" role="button"> Favoritos <i class="material-icons">favorite</i></a>
     </div>
     <div class="card-footer">
       <small class="text-muted">Ultimos Comentarios</small>
@@ -159,6 +153,9 @@
     <img class="card-img-top" src="../images/restaurante2.jpg" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Restaurante Bulevar</h5>
+			<a class="btn btn-info" href="#" role="button"  data-toggle="modal" data-target="#exampleModal"> Ver Menu <i class="material-icons">restaurant_menu</i></a>
+			<a class="btn btn-dark" href="#" role="button"> Domicilio <i class="material-icons">local_shipping</i></a>
+      <a class="btn btn-warning" href="#" role="button"> Favoritos <i class="material-icons">favorite</i></a>
     </div>
     <div class="card-footer">
       <small class="text-muted">Ultimos Comentarios</small>

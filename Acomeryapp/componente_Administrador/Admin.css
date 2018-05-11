@@ -1,12 +1,20 @@
+body{  background-color: black;}
+#cuenta { color: white; }
+#alerta { color: orange; }
+#configuracion {color: red;}
+#Estado {color: yellow;}
+#tablaReservas {color: orange;}}
+#paginadorReservas {color: orange;}
+#LetraDom {color: white;}
+#ImagenMenu { border:2px solid #fff;}
+#BotonesMenu{}
 .card-img-top {
     width: 95%;
     border-top-left-radius: calc(10.25rem - -1px);
     border-top-right-radius: calc(9.25rem - 1px);
     /* left: 37px; */
 }
-img {
-    vertical-align: middle;
-}
+
 *, ::after, ::before {
     box-sizing: border-box;
 }
@@ -81,16 +89,3 @@ img {
   .card-header:first-child {
    background-color: white;
 }
- .footer {    clear: both;    background: rgba(0, 0, 0, 0.2);    padding: 5px 10px;}
-
-.footer p {    font-family: Helvetica, Arial, sans-serif;
-          font-size: 75%;    text-align: right;}
-
- .footer a {    color: #807c72;
-
- }
-
- .container{
-       background-image: url('../images/login.png');
-       background-repeat: no-repeat;
- }
